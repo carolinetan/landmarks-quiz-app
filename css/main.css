@@ -1,0 +1,240 @@
+* {
+    font-family: "Roboto", sans-serif;
+}
+
+header {
+    background: url('../images/world-landmarks-short.jpg') fixed;
+    height: 180px;
+}
+
+h1 {
+    text-align: center;
+    color: darkred;
+    text-shadow: 2px 2px darkgray;
+    font-size: 2em;
+}
+
+body {
+    color: #252525;
+}
+
+header p {
+    margin-top: 0.5em;
+}
+
+legend { display: none; }
+
+.scoreboard {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: cadetblue;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+.quiz-question {
+    color: darkred;
+    font-size: 1.0em;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: center;
+}
+
+.quiz-image {
+    max-height: 100%;
+    max-width: 100%;
+    object-fit: scale-down;
+}
+
+.quiz-main {
+    display: none;
+    width: 50%;
+}
+
+.quiz-form {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: cadetblue;
+    font-size: 1.2em;
+}
+
+label:nth-child(1) {
+    background-color: #008B8B
+}
+label:nth-child(2) {
+    background-color: #20B2AA
+}
+label:nth-child(3) {
+    background-color: #48D1CC
+}
+label:nth-child(4) {
+    background-color: #40E0D0
+}
+label:nth-child(5) {
+    background-color: #00FFFF
+}
+
+label {
+    padding: 20px;
+    margin-bottom: 10px;
+    display: flex;
+    color: #ffffff;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.3s ease-out;
+    line-height: 22px
+}
+label:hover, label:focus, label.tab_focus_bg {
+    background-color: #AF6438;
+}
+
+fieldset {
+    border: none;
+    padding-top: 0px;
+}
+
+fieldset p {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+input {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: 50%;
+    width: 16px;
+    height: 16px;
+    border: 2px solid #ffffff;
+    transition: 0.2s all linear;
+    outline: none;
+    margin-right: 5px;
+    position: relative;
+    top: 2px;
+}
+
+input:checked  {
+    border: 8px solid #F9E79F;
+}
+
+input[type=radio] {
+    flex: 0 0 auto;
+    margin-right: 10px;
+}
+
+form button:hover, form button:focus {
+    background-color: #F9E79F;
+    color: dimgray;
+}
+
+form button {
+    font-size: 1.5em;
+    font-weight: bold;
+    width: 100%;
+    text-transform: uppercase;
+    background-color: darkred;
+    color: white;
+    border: none;
+    cursor: pointer;
+    height: 55px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.play-button {
+    font-size: 1.5em;
+    font-weight: bold;
+    width: 300px;
+    text-transform: uppercase;
+    background-color: darkred;
+    color: white;
+    border: none;
+    cursor: pointer;
+    height: 55px;
+    margin: 10px auto 10px auto;
+}
+
+.play-button-div {
+    text-align: center;
+}
+
+.play-button:hover, .nextButton:hover, .restartButton:hover, .play-button:focus, .nextButton:focus, .restartButton:focus {
+    background-color: #F9E79F;
+    color: dimgray;
+}
+
+.submit-button {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+
+.feedback {
+    display: block;
+    background: linear-gradient(to bottom, rgba(245, 255, 255, 1) 0%, rgba(124, 225, 230, 1) 100%);
+}
+
+.feedback button {
+    border: none;
+    background-color: darkred;
+    color: white;
+    font-size: 1.5em;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 0;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 10px;
+    width: 100%;
+    text-align: center;
+    height: 55px;
+}
+
+.feedback p, .results p {
+    color: dimgray;
+    font-size: 1.5em;
+    line-height: 1.5em;
+    text-transform: uppercase;
+    width: 100%;
+    text-align: center;
+}
+
+.feedback span {
+    color: saddlebrown;
+    font-size: 1.0em;
+    text-align: justify;
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 10px;
+    display: block;
+}
+.feedback img, .results img{
+    padding-top: 40px;
+    width: 150px;
+    display: block;
+    background-color: #11ffee00;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.feedback img {
+    border-radius: 50%;
+}
+
+.results {
+    display: block;
+    background: linear-gradient(to bottom, rgba(245, 255, 255, 1) 0%, rgba(124, 225, 230, 1) 100%);
+}
+
+.results span {
+    color: saddlebrown;
+    font-size: 1.3em;
+    text-align: center;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 10px;
+    display: block;
+}

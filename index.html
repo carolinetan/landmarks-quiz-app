@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Landmarks of the World</title>
+    <meta name="description" content="Landmarks of the World!">
+
+    <!-- Responsive viewport tag, tells small screens that it's responsive -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Normalize.css, a cross-browser reset file -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.1.1/normalize.css" rel="stylesheet">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Metrophobic" rel="stylesheet">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/float-grid.css" type="text/css"/>
+    <link rel="stylesheet" href="css/main.css" type="text/css"/>
+
+</head>
+<body>
+<header role="banner">
+    <div class="row">
+        <div class="title-column title">
+            <h1>Landmarks of the World!</h1>
+        </div>
+    </div>
+</header>
+<main role="main">
+    <div class="row">
+        <div class="col-6">
+            <div class="scoreboard">Question: <span class="questionNumber">0</span>/10</div>
+        </div>
+        <div class="col-6">
+            <div class="scoreboard">Score: <span class="score">0</span></div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="play-button-div col-12">
+            <button type='button' class="play-button">Let's Play</button>
+        </div>
+    </div>
+    <div class="quiz-main"></div>
+</main>
+<!-- Javascript -->
+<script src="//code.jquery.com/jquery.min.js"></script>
+<script type="text/javascript" src="datastore.js"></script>
+<script type="text/javascript" src="index.js"></script>
+</body>
+</html>

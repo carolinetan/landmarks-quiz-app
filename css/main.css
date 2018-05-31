@@ -22,22 +22,21 @@ header p {
     margin-top: 0.5em;
 }
 
-legend { display: none; }
 
 .scoreboard {
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: 15px;
+    margin-bottom: 15px;
     color: cadetblue;
     font-size: 1.5em;
     text-align: center;
 }
 
-.quiz-question {
+legend {
     color: darkred;
     font-size: 1.0em;
     padding-left: 10px;
     padding-right: 10px;
-    text-align: center;
+    text-align: left;
 }
 
 .quiz-image {
@@ -52,40 +51,11 @@ legend { display: none; }
 }
 
 .quiz-form {
+    display: block;
     margin-top: 20px;
     margin-bottom: 20px;
     color: cadetblue;
     font-size: 1.2em;
-}
-
-label:nth-child(1) {
-    background-color: #008B8B
-}
-label:nth-child(2) {
-    background-color: #20B2AA
-}
-label:nth-child(3) {
-    background-color: #48D1CC
-}
-label:nth-child(4) {
-    background-color: #40E0D0
-}
-label:nth-child(5) {
-    background-color: #00FFFF
-}
-
-label {
-    padding: 20px;
-    margin-bottom: 10px;
-    display: flex;
-    color: #ffffff;
-    text-transform: uppercase;
-    cursor: pointer;
-    transition: all 0.3s ease-out;
-    line-height: 22px
-}
-label:hover, label:focus, label.tab_focus_bg {
-    background-color: #AF6438;
 }
 
 fieldset {
@@ -97,6 +67,38 @@ fieldset p {
     margin-top: 0px;
     margin-bottom: 0px;
 }
+
+
+label:nth-child(3) {
+    background-color: #008B8B
+}
+label:nth-child(4) {
+    background-color: #20B2AA
+}
+label:nth-child(5) {
+    background-color: #48D1CC
+}
+label:nth-child(6) {
+    background-color: #40E0D0
+}
+label:nth-child(7) {
+    background-color: #00FFFF
+}
+
+label {
+    padding: 20px;
+    margin-bottom: 10px;
+    display: flex;
+    color: #ffffff;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.3s ease-out;
+    line-height: 15px
+}
+label:hover, label:focus, label.tab_focus_bg {
+    background-color: #AF6438;
+}
+
 
 input {
     -webkit-appearance: none;

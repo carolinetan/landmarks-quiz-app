@@ -60,28 +60,20 @@ function generateQuizItem() {
     if (questionNumber < QUIZ_DB.length) {
         let tabIdx = 10;
         return `
-    <div class="row quiz-question">
-        <h2>${QUIZ_DB[questionNumber].question}</h2>
-    </div>
     <div class="row">
-    <div class="col-6 quiz-form">
-        <img class="quiz-image"
-            src="${QUIZ_DB[questionNumber].image}" alt="${QUIZ_DB[questionNumber].imageLabel}"/>
-    </div>
-    <div class="row">
-    <div class="col-6 quiz-form">
             <form>
             <fieldset>
-            <legend>Landmark Locations</legend>
-                ${QUIZ_DB[questionNumber].answers.map( answer =>
-                    `<p><label class="answerOption">
-                    <input tabindex="11" type="radio" value="${answer}" name="answer" required="required">
+            <legend>${QUIZ_DB[questionNumber].question}</legend>
+            <img class="quiz-image"
+            src="${QUIZ_DB[questionNumber].image}" alt="${QUIZ_DB[questionNumber].imageLabel}"/>
+            ${QUIZ_DB[questionNumber].answers.map( answer =>
+                    `<label class="answerOption">
+                     <input tabindex="${tabIdx++}" type="radio" value="${answer}" name="answer" required="required">
         <span>${answer}<br></span>
-        </label></p>` ).join('')}
+        </label>` ).join('')}
             <button type="submit" class="submit-button">Submit</button>
         </fieldset>
         </form>
-    </div>
     </div>`;
     }
 }

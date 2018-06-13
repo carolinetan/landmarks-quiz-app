@@ -9,8 +9,8 @@ header {
 }
 
 h1.ontop {
-    background: #26C6DA;
-    border: 2px solid #26C6DA;
+    background: yellowgreen;
+    border: 2px solid yellowgreen;
     border-radius: 5px;
     font-weight: bold;
     position: relative;
@@ -176,7 +176,8 @@ form button {
 
 .feedback {
     display: block;
-    background: linear-gradient(to bottom, rgba(245, 255, 255, 1) 0%, rgba(124, 225, 230, 1) 100%);
+   /* background: linear-gradient(to bottom, rgba(245, 255, 255, 1) 0%, rgba(124, 225, 230, 1) 100%);*/
+    background: cyan;
 }
 
 .feedback button {
@@ -196,7 +197,7 @@ form button {
 }
 
 .feedback p, .results p {
-    color: dimgray;
+    color: #424242;
     font-size: 1.5em;
     line-height: 1.5em;
     text-transform: uppercase;

@@ -4,13 +4,18 @@
 
 header {
     background: url('../images/world-landmarks-short.jpg') fixed;
+    opacity: 0.7;
     height: 170px;
 }
 
-h1 {
+h1.ontop {
+    background: #26C6DA;
+    border: 2px solid #26C6DA;
+    border-radius: 5px;
+    font-weight: bold;
+    position: relative;
     text-align: center;
     color: darkred;
-    text-shadow: 2px 2px darkgray;
     font-size: 2em;
 }
 
@@ -70,24 +75,24 @@ fieldset p {
 
 
 label:nth-child(3) {
-    background-color: #008B8B
+    background-color: #286258;
 }
 label:nth-child(4) {
-    background-color: #20B2AA
+    background-color: #873600;
 }
 label:nth-child(5) {
-    background-color: #48D1CC
+    background-color: #773E8E;
 }
 label:nth-child(6) {
-    background-color: #40E0D0
+    background-color: #1D5981;
 }
 label:nth-child(7) {
-    background-color: #00FFFF
+    background-color: darkolivegreen;
 }
 
 label {
     padding: 20px;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
     display: flex;
     color: #ffffff;
     text-transform: uppercase;
@@ -138,9 +143,7 @@ form button {
     color: white;
     border: none;
     cursor: pointer;
-    height: 55px;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    height: 50px;
 }
 
 .play-button {
@@ -152,7 +155,7 @@ form button {
     color: white;
     border: none;
     cursor: pointer;
-    height: 55px;
+    height: 50px;
     margin: 10px auto 10px auto;
 }
 

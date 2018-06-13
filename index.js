@@ -58,7 +58,7 @@ function generateQuizItem() {
     console.log( `generateQuizItem: questionNumber = ${questionNumber}` );
 
     if (questionNumber < QUIZ_DB.length) {
-        let tabIdx = 10;
+        let index = 0;
         return `
     <div class="row">
             <form>
@@ -68,8 +68,8 @@ function generateQuizItem() {
             src="${QUIZ_DB[questionNumber].image}" alt="${QUIZ_DB[questionNumber].imageLabel}"/>
             ${QUIZ_DB[questionNumber].answers.map( answer =>
                     `<label class="answerOption">
-                     <input tabindex="${tabIdx++}" type="radio" value="${answer}" name="answer" required="required">
-        <span>${answer}<br></span>
+                     <input tabindex="0" type="radio" value="${answer}" aria-labelledby="answer${index}" required="required">
+        <span id="answer${index++}">${answer}<br></span>
         </label>` ).join('')}
             <button type="submit" class="submit-button">Submit</button>
         </fieldset>
